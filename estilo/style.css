@@ -1,0 +1,195 @@
+@charset "UTF8";
+
+/* #07DE1C #3BF505 #89EB05 #05F561*/
+
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+@font-face {
+    font-family: 'droid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #07DE1C;
+    --cor1: #3BF505;
+    --cor2: #89EB05;
+    --cor3: #05F561;
+    --cor4: #118032;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', sans-serif;
+    --fontdroid: 'droid', 'cursive'
+}
+
+
+body{
+    background-color: whitesmoke;
+    font-family: var(--font-padrao);
+}
+
+a.externo::after{
+    content: '\1F517';
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor0), var(--cor1), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+header > p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288)
+}
+
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
+    font-weight: normal;
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.219);
+}
+
+nav > a{
+    color: var(--cor0);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition-duration: .5s;
+    margin-bottom: 20px;
+}
+
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+div.video{
+    background-color: #05f5613d;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 1px 5px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: #05f5613a;
+    padding: 1px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #07DE1C;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor1);
+    font-family: var(--fontdroid);
+    font-weight: normal;
+} 
+
+main h2 {
+    font-family: var(--fontdroid);
+    color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor4 ), transparent);
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5em;
+}
+
+aside{
+    background-color: #05f5614f;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.342);
+}
+
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
